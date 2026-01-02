@@ -7,7 +7,7 @@ const JUMP_VELOCITY = -250.0
 
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# Add the gravity. gravidade aqui oh
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
