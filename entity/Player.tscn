@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://b37e60pkl7vhg"]
+
+[ext_resource type="Script" uid="uid://s1daoi0q7v8m" path="res://scripts/player.gd" id="1_birc2"]
+[ext_resource type="Texture2D" uid="uid://c3ngm1himmxgv" path="res://sprites/Sprites HK/HK jump.png" id="2_gnrw7"]
+[ext_resource type="Texture2D" uid="uid://cpt72wa2ueqpa" path="res://sprites/Sprites HK/HK stand.png" id="2_xuay3"]
+[ext_resource type="Texture2D" uid="uid://dtihtaxel8mp1" path="res://sprites/Sprites HK/HK running.png" id="4_maded"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj81h"]
+atlas = ExtResource("2_gnrw7")
+region = Rect2(0, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_815tk"]
+atlas = ExtResource("4_maded")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vaiil"]
+atlas = ExtResource("4_maded")
+region = Rect2(24, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_da7gm"]
+atlas = ExtResource("4_maded")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gnrw7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj81h")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xuay3")
+}],
+"loop": true,
+"name": &"stand",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_815tk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vaiil")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_da7gm")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lvrbl"]
+radius = 6.0
+height = 14.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_birc2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_gnrw7")
+animation = &"jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lvrbl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 770
+limit_bottom = 150
+position_smoothing_enabled = true
