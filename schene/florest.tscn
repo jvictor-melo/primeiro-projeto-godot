@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=4 uid="uid://dsyj05ibcegha"]
+
+[ext_resource type="PackedScene" uid="uid://b37e60pkl7vhg" path="res://entity/Player.tscn" id="1_rws2u"]
+[ext_resource type="TileSet" uid="uid://6ukwbs3d5ihx" path="res://tiles/terrain.tres" id="2_i7b3o"]
+[ext_resource type="Texture2D" uid="uid://dbp5dyial2gmr" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="3_i7b3o"]
+[ext_resource type="Texture2D" uid="uid://bo4g25syl800l" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="4_8i2c5"]
+[ext_resource type="Texture2D" uid="uid://c14ev6g5gk3h4" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="5_yxlrj"]
+[ext_resource type="Texture2D" uid="uid://bktb0mdkvuunn" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/3 - Bottom_leaf_piles.png" id="6_ggn6s"]
+[ext_resource type="Texture2D" uid="uid://c6304yltwsdjp" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="7_18a38"]
+[ext_resource type="Texture2D" uid="uid://ywykvd6dv5w4" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="8_o8tc4"]
+
+[node name="Forest" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(0, 32)
+tile_map_data = PackedByteArray("AAAAAAoAAQABAAMAAAABAAoAAQACAAMAAAACAAoAAQACAAMAAAADAAoAAQACAAMAAAAEAAoAAQACAAMAAAAFAAoAAQACAAMAAAAGAAoAAQACAAMAAAAHAAoAAQACAAMAAAAIAAoAAQACAAMAAAAJAAoAAQACAAMAAAAKAAoAAQACAAMAAAALAAoAAQACAAMAAAAMAAoAAQACAAMAAAANAAoAAQACAAMAAAAOAAoAAQACAAMAAAAPAAoAAQACAAMAAAAQAAoAAQACAAMAAAARAAoAAQACAAMAAAASAAoAAQACAAMAAAATAAoAAQACAAMAAAAUAAoAAQACAAMAAAAVAAoAAQACAAMAAAAWAAoAAQACAAMAAAAXAAoAAQACAAMAAAAYAAoAAQACAAMAAAAZAAoAAQACAAMAAAAaAAoAAQACAAMAAAAbAAoAAQACAAMAAAAcAAoAAQACAAMAAAAeAAoAAQACAAMAAAAdAAoAAQACAAMAAAAfAAoAAQACAAMAAAAgAAoAAQACAAMAAAAhAAoAAQACAAMAAAAiAAoAAQACAAMAAAAjAAoAAQACAAMAAAAkAAoAAQACAAMAAAAlAAoAAQACAAMAAAAmAAoAAQACAAMAAAAnAAoAAQACAAMAAAAoAAoAAQACAAMAAAApAAoAAQACAAMAAAAqAAoAAQACAAMAAAArAAoAAQACAAMAAAAsAAoAAQACAAMAAAAtAAoAAQACAAMAAAAuAAoAAQACAAMAAAAvAAoAAQACAAMAAAAwAAoAAQACAAMAAAAxAAoAAQACAAMAAAAyAAoAAQACAAMAAAAzAAoAAQACAAMAAAA0AAoAAQACAAMAAAA1AAoAAQACAAMAAAA2AAoAAQACAAMAAAA3AAoAAQACAAMAAAA4AAoAAQACAAMAAAA5AAoAAQACAAMAAAA6AAoAAQACAAMAAAA7AAoAAQACAAMAAAA8AAoAAQACAAMAAAA/AAoAAQACAAMAAAA+AAoAAQACAAMAAAA9AAoAAQACAAMAAABAAAoAAQAGAAMAAABBAAoAAQAGAAMAAABCAAoAAQAGAAMAAABDAAoAAQAGAAMAAABEAAoAAQAGAAMAAABFAAoAAQAGAAMAAABGAAoAAQAGAAMAAABHAAoAAQAGAAMAAABIAAoAAQAGAAMAAABJAAoAAQAGAAMAAABKAAoAAQAGAAMAAABLAAoAAQAGAAMAAABMAAoAAQAGAAMAAABNAAoAAQAGAAMAAABOAAoAAQAGAAMAAABPAAoAAQAGAAMAAABQAAoAAQAGAAMAAABRAAoAAQAGAAMAAABSAAoAAQAGAAMAAABTAAoAAQAGAAMAAABUAAoAAQAGAAMAAABVAAoAAQAGAAMAAABWAAoAAQAGAAMAAABXAAoAAQAGAAMAAABYAAoAAQAGAAMAAABZAAoAAQAGAAMAAABaAAoAAQAGAAMAAABbAAoAAQAGAAMAAABcAAoAAQAGAAMAAABdAAoAAQAGAAMAAABeAAoAAQAGAAMAAABfAAoAAQAGAAMAAABgAAoAAQAGAAMAAABhAAoAAQAGAAMAAABiAAoAAQAGAAMAAABjAAoAAQAGAAMAAABkAAoAAQAGAAMAAABlAAoAAQAGAAMAAABmAAoAAQAGAAMAAABnAAoAAQAGAAMAAABoAAoAAQAGAAMAAABpAAoAAQAGAAMAAABqAAoAAQAGAAMAAABrAAoAAQAGAAMAAABsAAoAAQAGAAMAAABtAAoAAQAGAAMAAABuAAoAAQAGAAMAAABvAAoAAQAGAAMAAABwAAoAAQAGAAMAAABxAAoAAQAGAAMAAAByAAoAAQAGAAMAAABzAAoAAQAGAAMAAAB0AAoAAQAGAAMAAAB1AAoAAQAGAAMAAAB2AAoAAQAGAAMAAAB3AAoAAQAGAAMAAAB4AAoAAQAGAAMAAAB5AAoAAQAGAAMAAAB6AAoAAQAGAAMAAAB7AAoAAQAGAAMAAAB8AAoAAQAGAAMAAAB9AAoAAQAGAAMAAAB+AAoAAQAGAAMAAAB/AAoAAQAGAAMAAACAAAoAAQAGAAMAAACBAAoAAQAGAAMAAACCAAoAAQAGAAMAAACDAAoAAQAGAAMAAACEAAoAAQAGAAMAAACFAAoAAQAGAAMAAACGAAoAAQAGAAMAAACHAAoAAQAGAAMAAACIAAoAAQAGAAMAAABCAPf/AQAGAAMAAAA=")
+tile_set = ExtResource("2_i7b3o")
+
+[node name="Player" parent="." instance=ExtResource("1_rws2u")]
+position = Vector2(45, 167)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="6" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/6"]
+texture_repeat = 2
+texture = ExtResource("3_i7b3o")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/5"]
+texture_repeat = 2
+texture = ExtResource("4_8i2c5")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/4"]
+texture_repeat = 2
+texture = ExtResource("5_yxlrj")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/3"]
+texture_repeat = 2
+texture = ExtResource("6_ggn6s")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/2"]
+texture_repeat = 2
+texture = ExtResource("7_18a38")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(1.5, 1.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/1"]
+texture_repeat = 2
+texture = ExtResource("8_o8tc4")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
