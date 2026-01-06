@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b37e60pkl7vhg" path="res://entity/Player.tscn" id="1_k8r25"]
 [ext_resource type="TileSet" uid="uid://6ukwbs3d5ihx" path="res://tiles/terrain.tres" id="3_peqmd"]
 [ext_resource type="Texture2D" uid="uid://ikpimakcbnyi" path="res://sprites/Sprite-0017.png" id="3_u1x4d"]
-[ext_resource type="TileSet" uid="uid://ck2d186hua1sc" path="res://schene/decoration.tres" id="4_sxaom"]
+[ext_resource type="TileSet" uid="uid://babtk3shot8mq" path="res://tiles/decoration.tres" id="4_sxaom"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sxaom"]
 atlas = ExtResource("3_u1x4d")
