@@ -19,63 +19,74 @@ tile_set = ExtResource("2_i7b3o")
 [node name="Player" parent="." instance=ExtResource("1_rws2u")]
 position = Vector2(45, 167)
 
-[node name="Node" type="Node" parent="."]
+[node name="Parallax" type="Node" parent="."]
 
-[node name="Parallax2D" type="Parallax2D" parent="Node"]
+[node name="Parallax2D" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Node/Parallax2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax/Parallax2D"]
 texture_repeat = 2
 texture = ExtResource("3_i7b3o")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
-[node name="Parallax2D6" type="Parallax2D" parent="Node"]
+[node name="Parallax2D6" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D2" type="Sprite2D" parent="Node/Parallax2D6"]
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax/Parallax2D6"]
 texture_repeat = 2
 texture = ExtResource("4_8i2c5")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
-[node name="Parallax2D5" type="Parallax2D" parent="Node"]
+[node name="Parallax2D5" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(0.3, 0.3)
+repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D3" type="Sprite2D" parent="Node/Parallax2D5"]
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax/Parallax2D5"]
 texture_repeat = 2
 texture = ExtResource("5_yxlrj")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
-[node name="Parallax2D4" type="Parallax2D" parent="Node"]
+[node name="Parallax2D4" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D4" type="Sprite2D" parent="Node/Parallax2D4"]
+[node name="Sprite2D4" type="Sprite2D" parent="Parallax/Parallax2D4"]
 texture_repeat = 2
 texture = ExtResource("6_ggn6s")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
-[node name="Parallax2D3" type="Parallax2D" parent="Node"]
+[node name="Parallax2D3" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D5" type="Sprite2D" parent="Node/Parallax2D3"]
+[node name="Sprite2D5" type="Sprite2D" parent="Parallax/Parallax2D3"]
 texture_repeat = 2
 texture = ExtResource("7_18a38")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
-[node name="Parallax2D2" type="Parallax2D" parent="Node"]
+[node name="Parallax2D2" type="Parallax2D" parent="Parallax"]
+z_index = -1
 scroll_scale = Vector2(1.5, 1.5)
+repeat_size = Vector2(288, 0)
 
-[node name="Sprite2D6" type="Sprite2D" parent="Node/Parallax2D2"]
+[node name="Sprite2D6" type="Sprite2D" parent="Parallax/Parallax2D2"]
 texture_repeat = 2
 texture = ExtResource("8_o8tc4")
 centered = false
