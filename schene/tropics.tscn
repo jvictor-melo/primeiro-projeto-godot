@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://dxuodr1j2ndly"]
+[gd_scene load_steps=11 format=4 uid="uid://dxuodr1j2ndly"]
 
 [ext_resource type="PackedScene" uid="uid://b37e60pkl7vhg" path="res://entity/Player.tscn" id="1_bpsc5"]
 [ext_resource type="TileSet" uid="uid://6ukwbs3d5ihx" path="res://tiles/terrain.tres" id="2_c5rhc"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c5ctnowm6bpyp" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/4 - Background_clouds.png" id="6_jfxt7"]
 [ext_resource type="Texture2D" uid="uid://qq2ilpfj5d7n" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/1 - Waters_version_1.png" id="7_6bbms"]
 [ext_resource type="Texture2D" uid="uid://qg0t6g7qebya" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/2 - Waters_version_2.png" id="8_mpa7o"]
+[ext_resource type="PackedScene" uid="uid://bgrxkst272slc" path="res://entity/camera.tscn" id="9_mpa7o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nr6e2"]
 animations = [{
@@ -93,3 +94,5 @@ sprite_frames = SubResource("SpriteFrames_nr6e2")
 autoplay = "default"
 frame_progress = 0.20648235
 centered = false
+
+[node name="Camera" parent="." instance=ExtResource("9_mpa7o")]

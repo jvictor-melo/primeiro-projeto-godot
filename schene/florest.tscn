@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://dsyj05ibcegha"]
+[gd_scene load_steps=10 format=4 uid="uid://dsyj05ibcegha"]
 
 [ext_resource type="PackedScene" uid="uid://b37e60pkl7vhg" path="res://entity/Player.tscn" id="1_rws2u"]
 [ext_resource type="TileSet" uid="uid://6ukwbs3d5ihx" path="res://tiles/terrain.tres" id="2_i7b3o"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bktb0mdkvuunn" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/3 - Bottom_leaf_piles.png" id="6_ggn6s"]
 [ext_resource type="Texture2D" uid="uid://c6304yltwsdjp" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="7_18a38"]
 [ext_resource type="Texture2D" uid="uid://ywykvd6dv5w4" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="8_o8tc4"]
+[ext_resource type="PackedScene" uid="uid://bgrxkst272slc" path="res://entity/camera.tscn" id="9_yxlrj"]
 
 [node name="Forest" type="Node2D"]
 
@@ -92,3 +93,6 @@ texture = ExtResource("8_o8tc4")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
+
+[node name="Camera" parent="." instance=ExtResource("9_yxlrj")]
+limit_top = 0
